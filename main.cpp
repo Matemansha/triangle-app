@@ -6,9 +6,11 @@ int main() {
 	std::cout << "Введите стороны: ";
 	std::cin >> a >> b >> c;
 	std::cout << a << " " << b << " " << c << std::endl;
-    if (isTriangle(a, b, c))
+   if (isTriangle(a, b, c)) {
 		std::cout << "Треугольник существует" << std::endl;
-	else
+		std::cout << "Периметр равен " << perimeter(a, b, c) << std::endl;
+	} else {
 		std::cout << "Треугольник не существует" << std::endl;
+	}
 	return 0;
 }
