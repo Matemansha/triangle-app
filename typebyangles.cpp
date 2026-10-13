@@ -1,4 +1,4 @@
-#include "typebyangles.h"
+#include "typebyangles.hpp"
 
 std::string typeByAngles(double a, double b, double c) {
 	double a2 = a * a, b2 = b * b, c2 = c * c;
