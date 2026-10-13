@@ -3,6 +3,7 @@
 #include "perimeter.hpp"
 #include "area.hpp"
 #include "typebysides.hpp"
+#include "typebyangles.hpp"
 
 int main() {
 	double a, b, c;
@@ -14,7 +15,7 @@ int main() {
 		std::cout << "Периметр равен " << perimeter(a, b, c) << std::endl;
         std::cout << "Площадь равна " << area(a, b, c) << std::endl;
 		std::cout << "Треугольник существует, он "
-		          << typeBySides(a, b, c) << std::endl;
+		          << typeBySides(a, b, c) << "(" << typeByAngles(a, b, c)<< ")" << std::endl;
 	} else {
 		std::cout << "Треугольник не существует" << std::endl;
 	}
