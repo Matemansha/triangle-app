@@ -9,6 +9,7 @@ int main() {
    if (isTriangle(a, b, c)) {
 		std::cout << "Треугольник существует" << std::endl;
 		std::cout << "Периметр равен " << perimeter(a, b, c) << std::endl;
+        std::cout << "Площадь равна " << area(a, b, c) << std::endl;
 	} else {
 		std::cout << "Треугольник не существует" << std::endl;
 	}
